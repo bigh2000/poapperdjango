@@ -1,0 +1,91 @@
+Traceback (most recent call last):
+  File "/usr/local/bin/django-admin", line 11, in <module>
+    sys.exit(execute_from_command_line())
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/__init__.py", line 338, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/__init__.py", line 330, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/__init__.py", line 190, in fetch_command
+    klass = load_command_class(app_name, subcommand)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/__init__.py", line 40, in load_command_class
+    module = import_module('%s.management.commands.%s' % (app_name, name))
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 14, in <module>
+    from django.db.migrations.executor import MigrationExecutor
+  File "/usr/local/lib/python2.7/dist-packages/django/db/migrations/executor.py", line 6, in <module>
+    from .loader import MigrationLoader
+  File "/usr/local/lib/python2.7/dist-packages/django/db/migrations/loader.py", line 10, in <module>
+    from django.db.migrations.recorder import MigrationRecorder
+  File "/usr/local/lib/python2.7/dist-packages/django/db/migrations/recorder.py", line 9, in <module>
+    class MigrationRecorder(object):
+  File "/usr/local/lib/python2.7/dist-packages/django/db/migrations/recorder.py", line 23, in MigrationRecorder
+    class Migration(models.Model):
+  File "/usr/local/lib/python2.7/dist-packages/django/db/migrations/recorder.py", line 24, in Migration
+    app = models.CharField(max_length=255)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py", line 1081, in __init__
+    super(CharField, self).__init__(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py", line 161, in __init__
+    self.db_tablespace = db_tablespace or settings.DEFAULT_INDEX_TABLESPACE
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 48, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 42, in _setup
+    % (desc, ENVIRONMENT_VARIABLE))
+django.core.exceptions.ImproperlyConfigured: Requested setting DEFAULT_INDEX_TABLESPACE, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 23, 2016 - 05:00:40
+Django version 1.8.4, using settings 'poapperdjango.settings'
+Starting development server at http://0.0.0.0:8777/
+Quit the server with CONTROL-C.
+[23/Apr/2016 05:00:53] "GET / HTTP/1.1" 200 8092
+[23/Apr/2016 05:00:54] "GET /static/startbootstrap-clean-blog/js/clean-blog.min.js HTTP/1.1" 200 17405
+[23/Apr/2016 05:00:54] "GET /static/startbootstrap-clean-blog/css/clean-blog.min.css HTTP/1.1" 200 7088
+[23/Apr/2016 05:00:54] "GET /static/startbootstrap-clean-blog/js/bootstrap.min.js HTTP/1.1" 200 36868
+[23/Apr/2016 05:00:54] "GET /static/startbootstrap-clean-blog/css/bootstrap.min.css HTTP/1.1" 200 121260
+[23/Apr/2016 05:00:54] "GET /static/startbootstrap-clean-blog/js/jquery.js HTTP/1.1" 200 247351
+[23/Apr/2016 05:00:55] "GET /static/startbootstrap-clean-blog/img/home-bg.jpg HTTP/1.1" 200 172779
+[23/Apr/2016 05:00:55] "GET /favicon.ico HTTP/1.1" 404 2054
+[23/Apr/2016 05:00:57] "GET / HTTP/1.1" 200 8092
+[23/Apr/2016 05:01:01] "GET / HTTP/1.1" 200 8092
+[23/Apr/2016 05:01:43] "GET / HTTP/1.1" 200 8092
+[23/Apr/2016 05:01:43] "GET /static/startbootstrap-clean-blog/js/bootstrap.min.js HTTP/1.1" 304 0
+[23/Apr/2016 05:01:43] "GET /static/startbootstrap-clean-blog/css/clean-blog.min.css HTTP/1.1" 304 0
+[23/Apr/2016 05:01:43] "GET /static/startbootstrap-clean-blog/js/jquery.js HTTP/1.1" 304 0
+[23/Apr/2016 05:01:43] "GET /static/startbootstrap-clean-blog/css/bootstrap.min.css HTTP/1.1" 304 0
+[23/Apr/2016 05:01:43] "GET /static/startbootstrap-clean-blog/js/clean-blog.min.js HTTP/1.1" 304 0
+[23/Apr/2016 05:01:44] "GET /static/startbootstrap-clean-blog/img/home-bg.jpg HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 23, 2016 - 05:00:52
+Django version 1.8.4, using settings 'poapperdjango.settings'
+Starting development server at http://0.0.0.0:8777/
+Quit the server with CONTROL-C.
+[23/Apr/2016 05:11:28] "GET / HTTP/1.1" 200 8063
+[23/Apr/2016 05:11:28] "GET /js/clean-blog.min.js HTTP/1.1" 404 2081
+[23/Apr/2016 05:11:28] "GET /js/jquery.js HTTP/1.1" 404 2057
+[23/Apr/2016 05:11:28] "GET /js/bootstrap.min.js HTTP/1.1" 404 2078
+[23/Apr/2016 05:11:28] "GET /static/css/clean-blog.min.css HTTP/1.1" 200 7088
+[23/Apr/2016 05:11:28] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121260
+[23/Apr/2016 05:11:28] "GET / HTTP/1.1" 200 8063
+[23/Apr/2016 05:11:45] "GET / HTTP/1.1" 200 8063
+[23/Apr/2016 05:11:45] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[23/Apr/2016 05:11:45] "GET /js/bootstrap.min.js HTTP/1.1" 404 2078
+[23/Apr/2016 05:11:45] "GET /static/css/clean-blog.min.css HTTP/1.1" 304 0
+[23/Apr/2016 05:11:45] "GET /js/jquery.js HTTP/1.1" 404 2057
+[23/Apr/2016 05:11:45] "GET /js/clean-blog.min.js HTTP/1.1" 404 2081
+[23/Apr/2016 05:11:46] "GET /static/img/home-bg.jpg HTTP/1.1" 200 172779
+[23/Apr/2016 05:14:16] "GET /index.html HTTP/1.1" 404 2051
+[23/Apr/2016 05:14:18] "GET /index.html HTTP/1.1" 404 2051
+[23/Apr/2016 05:14:21] "GET /about.html HTTP/1.1" 404 2051
+[23/Apr/2016 05:14:27] "GET /post.html HTTP/1.1" 404 2048
+[23/Apr/2016 05:17:04] "GET / HTTP/1.1" 200 8063
+[23/Apr/2016 05:17:04] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[23/Apr/2016 05:17:04] "GET /static/css/clean-blog.min.css HTTP/1.1" 304 0
+[23/Apr/2016 05:17:04] "GET /js/clean-blog.min.js HTTP/1.1" 404 2081
+[23/Apr/2016 05:17:04] "GET /js/jquery.js HTTP/1.1" 404 2057
+[23/Apr/2016 05:17:04] "GET /js/bootstrap.min.js HTTP/1.1" 404 2078
+[23/Apr/2016 05:17:05] "GET /static/img/home-bg.jpg HTTP/1.1" 304 0
+[23/Apr/2016 05:17:05] "GET /favicon.ico HTTP/1.1" 404 2054
