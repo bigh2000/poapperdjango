@@ -89,3 +89,25 @@ Quit the server with CONTROL-C.
 [23/Apr/2016 05:17:04] "GET /js/bootstrap.min.js HTTP/1.1" 404 2078
 [23/Apr/2016 05:17:05] "GET /static/img/home-bg.jpg HTTP/1.1" 304 0
 [23/Apr/2016 05:17:05] "GET /favicon.ico HTTP/1.1" 404 2054
+[27/Apr/2016 02:30:06] "GET / HTTP/1.1" 200 8063
+[27/Apr/2016 02:30:06] "GET /js/jquery.js HTTP/1.1" 404 2057
+[27/Apr/2016 02:30:06] "GET /js/clean-blog.min.js HTTP/1.1" 404 2081
+[27/Apr/2016 02:30:06] "GET /js/bootstrap.min.js HTTP/1.1" 404 2078
+[27/Apr/2016 02:30:28] "GET /about.html HTTP/1.1" 404 2051
+[27/Apr/2016 02:30:31] "GET /post.html HTTP/1.1" 404 2048
+[27/Apr/2016 02:30:34] "GET /contact.html HTTP/1.1" 404 2057
+[27/Apr/2016 02:30:36] "GET /index.html HTTP/1.1" 404 2051
+[27/Apr/2016 02:30:42] "GET /index.html HTTP/1.1" 404 2051
+[27/Apr/2016 02:30:45] "GET /post.html HTTP/1.1" 404 2048
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 27, 2016 - 02:29:42
+Django version 1.8.4, using settings 'poapperdjango.settings'
+Starting development server at http://0.0.0.0:8777/
+Quit the server with CONTROL-C.
+[27/Apr/2016 02:41:52] "GET / HTTP/1.1" 200 8063
+[27/Apr/2016 02:41:52] "GET /js/bootstrap.min.js HTTP/1.1" 404 2078
+[27/Apr/2016 02:41:52] "GET /js/jquery.js HTTP/1.1" 404 2057
+[27/Apr/2016 02:41:52] "GET /js/clean-blog.min.js HTTP/1.1" 404 2081
+[27/Apr/2016 02:42:00] "GET /post.html HTTP/1.1" 404 2048
