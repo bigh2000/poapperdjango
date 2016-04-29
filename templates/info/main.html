@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
-{% block title %}-Main{% endblock %}
+{% block title %}-Info{% endblock %}
 
 {% block content %}
 <!-- Page Header -->
@@ -11,7 +11,7 @@
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 				<div class="site-heading">
-					<h1>Main 게시판</h1>
+					<h1>Info 게시판</h1>
 					<hr class="small">
 					<span class="subheading">PoApper</span>
 				</div>
@@ -24,10 +24,10 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<a href="http://ubuntu.poapper.com:7778/admin/main/post/add/">새글</a> &nbsp; <a href="http://ubuntu.poapper.com:7778/admin/main/post/">검색</a>
+			<a href="http://ubuntu.poapper.com:7778/admin/info/post/add/">새글</a> &nbsp; <a href="http://ubuntu.poapper.com:7778/admin/info/post/">검색</a>
 			<div class="post-preview">
 				{% for post in post_list %}
-				<a href="{% url 'main.views.post_detail' post.pk %}">
+				<a href="{% url 'info.views.post_detail' post.pk %}">
 					<h2 class="post-title">
 						{{ post.title }}
 					</h2>

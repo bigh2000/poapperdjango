@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}-Main{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('{% static 'img/post-bg.jpg' %}')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-heading">
+					<h1>Main 게시판</h1>
+					<hr align="left" width="50%">
+					<span class="subheading">PoApper</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Post Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<script>
+					var addr = 'http://ubuntu.poapper.com:7778/admin/main/post/'+ {{ post.pk }};
+					</script>
+					<a href="{% url "main.views.show_main" %}"><b>[글 목록으로]</b></a>&nbsp; <a href="#" onclick=" location.href = addr; return false;">[수정]</a>&nbsp; &nbsp;<b> 제목: </b> {{ post.title|safe }}
+				</div>
+
+				<div class="panel-body">
+					{{ post.content|safe|linebreaks }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr>
+{% endblock %}
