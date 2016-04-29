@@ -111,3 +111,60 @@ Quit the server with CONTROL-C.
 [27/Apr/2016 02:41:52] "GET /js/jquery.js HTTP/1.1" 404 2057
 [27/Apr/2016 02:41:52] "GET /js/clean-blog.min.js HTTP/1.1" 404 2081
 [27/Apr/2016 02:42:00] "GET /post.html HTTP/1.1" 404 2048
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 30, 2016 - 08:35:18
+Django version 1.8.4, using settings 'poapperdjango.settings'
+Starting development server at http://0.0.0.0:7778/
+Quit the server with CONTROL-C.
+[30/Apr/2016 08:36:32] "GET / HTTP/1.1" 200 5130
+[30/Apr/2016 08:36:32] "GET /js/bootstrap.min.js HTTP/1.1" 404 2898
+[30/Apr/2016 08:36:32] "GET /js/jquery.js HTTP/1.1" 404 2877
+[30/Apr/2016 08:36:32] "GET /js/clean-blog.min.js HTTP/1.1" 404 2901
+[30/Apr/2016 08:38:41] "GET / HTTP/1.1" 200 5130
+[30/Apr/2016 08:38:41] "GET /js/jquery.js HTTP/1.1" 404 2877
+[30/Apr/2016 08:38:41] "GET /js/bootstrap.min.js HTTP/1.1" 404 2898
+[30/Apr/2016 08:38:41] "GET /js/clean-blog.min.js HTTP/1.1" 404 2901
+[30/Apr/2016 08:38:45] "GET /info/ HTTP/1.1" 200 4870
+[30/Apr/2016 08:38:45] "GET /info/js/jquery.js HTTP/1.1" 404 2892
+[30/Apr/2016 08:38:45] "GET /info/js/clean-blog.min.js HTTP/1.1" 404 2916
+[30/Apr/2016 08:38:45] "GET /info/js/bootstrap.min.js HTTP/1.1" 404 2913
+[30/Apr/2016 08:38:46] "GET /qna/ HTTP/1.1" 200 4863
+[30/Apr/2016 08:38:46] "GET /qna/js/jquery.js HTTP/1.1" 404 2889
+[30/Apr/2016 08:38:46] "GET /qna/js/bootstrap.min.js HTTP/1.1" 404 2910
+[30/Apr/2016 08:38:46] "GET /qna/js/clean-blog.min.js HTTP/1.1" 404 2913
+[30/Apr/2016 08:38:46] "GET /scratch/ HTTP/1.1" 200 4891
+[30/Apr/2016 08:38:47] "GET /scratch/js/clean-blog.min.js HTTP/1.1" 404 2925
+[30/Apr/2016 08:38:47] "GET /scratch/js/jquery.js HTTP/1.1" 404 2901
+[30/Apr/2016 08:38:47] "GET /scratch/js/bootstrap.min.js HTTP/1.1" 404 2922
+[30/Apr/2016 08:42:16] "GET / HTTP/1.1" 200 4970
+[30/Apr/2016 08:42:16] "GET /js/jquery.js HTTP/1.1" 404 2877
+[30/Apr/2016 08:42:16] "GET /js/clean-blog.min.js HTTP/1.1" 404 2901
+[30/Apr/2016 08:42:16] "GET /js/bootstrap.min.js HTTP/1.1" 404 2898
+[30/Apr/2016 08:42:16] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[30/Apr/2016 08:42:16] "GET /static/css/clean-blog.min.css HTTP/1.1" 304 0
+[30/Apr/2016 08:42:17] "GET /static/img/home-bg.jpg HTTP/1.1" 304 0
+[30/Apr/2016 08:42:21] "GET /js/jquery.js HTTP/1.1" 404 2877
+[30/Apr/2016 08:42:44] "GET / HTTP/1.1" 200 5002
+[30/Apr/2016 08:42:44] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[30/Apr/2016 08:42:44] "GET /static/css/clean-blog.min.css HTTP/1.1" 304 0
+[30/Apr/2016 08:42:44] "GET /js/jquery.js HTTP/1.1" 404 2877
+[30/Apr/2016 08:42:44] "GET /js/bootstrap.min.js HTTP/1.1" 404 2898
+[30/Apr/2016 08:42:44] "GET /js/clean-blog.min.js HTTP/1.1" 404 2901
+[30/Apr/2016 08:42:44] "GET /static/img/home-bg.jpg HTTP/1.1" 304 0
+[30/Apr/2016 08:43:09] "GET / HTTP/1.1" 200 5003
+[30/Apr/2016 08:43:09] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[30/Apr/2016 08:43:09] "GET /static/css/clean-blog.min.css HTTP/1.1" 304 0
+[30/Apr/2016 08:43:09] "GET /js/jquery.js HTTP/1.1" 404 2877
+[30/Apr/2016 08:43:09] "GET /js/clean-blog.min.js HTTP/1.1" 404 2901
+[30/Apr/2016 08:43:09] "GET /js/bootstrap.min.js HTTP/1.1" 404 2898
+[30/Apr/2016 08:43:09] "GET /static/img/home-bg.jpg HTTP/1.1" 304 0
+[30/Apr/2016 08:43:19] "GET /1/ HTTP/1.1" 200 4530
+[30/Apr/2016 08:43:20] "GET /1/js/jquery.js HTTP/1.1" 404 2883
+[30/Apr/2016 08:43:20] "GET /1/js/bootstrap.min.js HTTP/1.1" 404 2904
+[30/Apr/2016 08:43:20] "GET /1/js/clean-blog.min.js HTTP/1.1" 404 2907
+[30/Apr/2016 08:43:21] "GET / HTTP/1.1" 200 5003
+[30/Apr/2016 08:43:21] "GET /js/jquery.js HTTP/1.1" 404 2877
+[30/Apr/2016 08:43:21] "GET /js/bootstrap.min.js HTTP/1.1" 404 2898
+[30/Apr/2016 08:43:21] "GET /js/clean-blog.min.js HTTP/1.1" 404 2901
