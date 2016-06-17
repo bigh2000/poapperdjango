@@ -32,7 +32,14 @@
 					<a href="{% url "main.views.show_main" %}"><b>[글 목록으로]</b></a>&nbsp; <a href="#" onclick=" location.href = addr; return false;">[수정]</a>&nbsp; &nbsp;<b> 제목: </b> {{ post.title|safe }}
 				</div>
 
+				<style>
+				img { max-width:100%; }
+				</style>
+
 				<div class="panel-body">
+					{% if post.photo %}
+						<center><img src="{{ post.photo.url }}"/></center>
+					{% endif %}
 					{{ post.content|safe|linebreaks }}
 				</div>
 
