@@ -16,5 +16,7 @@ class Comment(models.Model):
 	message = models.TextField()
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
+	def comment_set_reverse(self):	# why doesn't it work?
+		return self.comment_set.all().order_by('-created_at')
 	def __unicode__(self):
 		return self.message

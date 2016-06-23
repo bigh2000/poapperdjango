@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^(?P<pk>\d+)/$', 'main.views.post_detail'),
     url(r'^(?P<pk>\d+)/comments/new/$', 'main.views.comment_new'),
     url(r'^(?P<post_pk>\d+)/comments/(?P<pk>\d+)/edit/$', 'main.views.comment_edit'),
+    url(r'^(?P<post_pk>\d+)/comments/(?P<pk>\d+)/delete/$', 'main.views.comment_delete'),
     url(r'^info/$', 'info.views.show_main'),
     url(r'^info/(?P<pk>\d+)/$', 'info.views.post_detail'),
     url(r'^qna/$', 'qna.views.show_main'),

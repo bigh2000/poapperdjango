@@ -35,3 +35,10 @@ def comment_edit(request, post_pk, pk):
 	else:
 		form = CommentForm(instance=comment)
 	return render(request, 'main/post_form.html', {'form':form})
+
+def comment_delete(request, post_pk, pk):
+	comment = Comment.objects.get(pk=pk)
+	if request.method == 'POST':
+		comment.delete()
+		return redirect('main.views.post_detail', post_pk)
+	return render(request, 'main/comment_delete_confirm.html', {'comment':comment})
