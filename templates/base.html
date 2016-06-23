@@ -33,6 +33,8 @@
 	</head>
 
 	<body>
+		{# django.contrib.auth.models.User #}
+		{# django.contrib.auth.models.AnonymousUser #}
 
 		<!-- Navigation -->
 		<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -46,6 +48,15 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="http://ubuntu.poapper.com:7778">Home</a>
+
+					<ul class="nav navbar-nav navbar-left">
+						{% if user.is_authenticated %}
+							<li/><a>({{ user.username }})</a>
+							<li/><a href="{% url "logout" %}?next={{ request.get_full_path }}">로그아웃</a>
+						{% else %}
+							<li/><a href="{% url "login" %}?next={{ request.get_full_path }}">로그인</a>
+						{% endif %}
+					</ul>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->

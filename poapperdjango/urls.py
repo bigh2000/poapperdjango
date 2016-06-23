@@ -20,6 +20,8 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
+    url(r'^accounts/signup/$', 'accounts.views.signup'),
     url(r'^$', 'main.views.show_main'),
     url(r'^(?P<pk>\d+)/$', 'main.views.post_detail'),
     url(r'^(?P<pk>\d+)/comments/new/$', 'main.views.comment_new'),
