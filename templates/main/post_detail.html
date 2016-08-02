@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% load tags %}
 
 {% block title %}-Main{% endblock %}
 
@@ -40,7 +41,9 @@
 					{% if post.photo %}
 						<center><img src="{{ post.photo.url }}"/></center>
 					{% endif %}
-					{{ post.content|safe|linebreaks }}
+                    {% autoescape on %}
+					{{ post.content|keep_spacing }}
+                    {% endautoescape %}
 				</div>
 
 				<div class="panel-footer">
